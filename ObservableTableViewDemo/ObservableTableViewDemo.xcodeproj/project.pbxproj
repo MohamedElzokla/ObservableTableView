@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE860ACA268A1236001FADC8 /* ObservableTableViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE860AC9268A1236001FADC8 /* ObservableTableViewDemoTests.swift */; };
 		CEAF3F9C23F303580048FA23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF3F9B23F303580048FA23 /* AppDelegate.swift */; };
 		CEAF3FA023F303580048FA23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF3F9F23F303580048FA23 /* ViewController.swift */; };
 		CEAF3FA323F303580048FA23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAF3FA123F303580048FA23 /* Main.storyboard */; };
@@ -16,7 +17,20 @@
 		CEAF3FB223F303B50048FA23 /* ObservableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF3FB123F303B40048FA23 /* ObservableScrollView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE860ACC268A1236001FADC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEAF3F9023F303580048FA23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEAF3F9723F303580048FA23;
+			remoteInfo = ObservableTableViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CE860AC7268A1235001FADC8 /* ObservableTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservableTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE860AC9268A1236001FADC8 /* ObservableTableViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTableViewDemoTests.swift; sourceTree = "<group>"; };
+		CE860ACB268A1236001FADC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAF3F9823F303580048FA23 /* ObservableTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservableTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAF3F9B23F303580048FA23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAF3F9F23F303580048FA23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE860AC4268A1235001FADC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEAF3F9523F303580048FA23 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE860AC8268A1235001FADC8 /* ObservableTableViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE860AC9268A1236001FADC8 /* ObservableTableViewDemoTests.swift */,
+				CE860ACB268A1236001FADC8 /* Info.plist */,
+			);
+			path = ObservableTableViewDemoTests;
+			sourceTree = "<group>";
+		};
 		CEAF3F8F23F303580048FA23 = {
 			isa = PBXGroup;
 			children = (
 				CEAF3F9A23F303580048FA23 /* ObservableTableViewDemo */,
+				CE860AC8268A1235001FADC8 /* ObservableTableViewDemoTests */,
 				CEAF3F9923F303580048FA23 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				CEAF3F9823F303580048FA23 /* ObservableTableViewDemo.app */,
+				CE860AC7268A1235001FADC8 /* ObservableTableViewDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +113,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE860AC6268A1235001FADC8 /* ObservableTableViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE860AD0268A1236001FADC8 /* Build configuration list for PBXNativeTarget "ObservableTableViewDemoTests" */;
+			buildPhases = (
+				CE860AC3268A1235001FADC8 /* Sources */,
+				CE860AC4268A1235001FADC8 /* Frameworks */,
+				CE860AC5268A1235001FADC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE860ACD268A1236001FADC8 /* PBXTargetDependency */,
+			);
+			name = ObservableTableViewDemoTests;
+			productName = ObservableTableViewDemoTests;
+			productReference = CE860AC7268A1235001FADC8 /* ObservableTableViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CEAF3F9723F303580048FA23 /* ObservableTableViewDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEAF3FAC23F303590048FA23 /* Build configuration list for PBXNativeTarget "ObservableTableViewDemo" */;
@@ -104,10 +154,14 @@
 		CEAF3F9023F303580048FA23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = elzokla;
 				TargetAttributes = {
+					CE860AC6268A1235001FADC8 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CEAF3F9723F303580048FA23;
+					};
 					CEAF3F9723F303580048FA23 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -127,11 +181,19 @@
 			projectRoot = "";
 			targets = (
 				CEAF3F9723F303580048FA23 /* ObservableTableViewDemo */,
+				CE860AC6268A1235001FADC8 /* ObservableTableViewDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE860AC5268A1235001FADC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEAF3F9623F303580048FA23 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,6 +207,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE860AC3268A1235001FADC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE860ACA268A1236001FADC8 /* ObservableTableViewDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEAF3F9423F303580048FA23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,6 +227,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE860ACD268A1236001FADC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEAF3F9723F303580048FA23 /* ObservableTableViewDemo */;
+			targetProxy = CE860ACC268A1236001FADC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEAF3FA123F303580048FA23 /* Main.storyboard */ = {
@@ -178,6 +256,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CE860ACE268A1236001FADC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 999448MWZF;
+				INFOPLIST_FILE = ObservableTableViewDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elzokla.rr.ObservableTableViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObservableTableViewDemo.app/ObservableTableViewDemo";
+			};
+			name = Debug;
+		};
+		CE860ACF268A1236001FADC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 999448MWZF;
+				INFOPLIST_FILE = ObservableTableViewDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elzokla.rr.ObservableTableViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObservableTableViewDemo.app/ObservableTableViewDemo";
+			};
+			name = Release;
+		};
 		CEAF3FAA23F303590048FA23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -331,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE860AD0268A1236001FADC8 /* Build configuration list for PBXNativeTarget "ObservableTableViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE860ACE268A1236001FADC8 /* Debug */,
+				CE860ACF268A1236001FADC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEAF3F9323F303580048FA23 /* Build configuration list for PBXProject "ObservableTableViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
